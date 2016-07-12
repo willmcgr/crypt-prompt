@@ -3,7 +3,8 @@
 Files
 ---
 
-PKGBUILD: is an archlinux thing, builds a package and installs it.  
+PKGBUILD: instructs and builds a package and installs it.  
+aurpkgbuild: standalone pkgbuild.  
 crypt-prompt.txt: the text that will be printed during boot.  
 makefile: used for installing w/o making a package.  
 
