@@ -4,6 +4,7 @@ Files
 ---
 
 PKGBUILD: is an archlinux thing, builds a package and installs it.
+
 crypt-prompt.txt: the text that will be printed during boot, later saved as /etc/crypt-prompt. later edits can be made easily by editing this file.
 
 
