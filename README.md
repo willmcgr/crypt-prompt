@@ -4,8 +4,8 @@ Files
 ---
 
 PKGBUILD: is an archlinux thing, builds a package and installs it.  
-crypt-prompt.txt: the text that will be printed during boot.
-makefile: used for installing w/o making a package.
+crypt-prompt.txt: the text that will be printed during boot.  
+makefile: used for installing w/o making a package.  
 
 
 Installation
