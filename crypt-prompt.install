@@ -14,6 +14,6 @@ build() {
 ##  display hook description
 help() {
 	    cat <<HELPEOF
-    A simple initpcio hook, which can display a file like /etc/issue before full disk encryption password prompt for legal purposes.
+    A simple initpcio hook, which can display a file like /etc/crypt-prompt before full disk encryption password prompt for legal purposes.
 HELPEOF
 }
