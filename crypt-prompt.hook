@@ -1,0 +1,8 @@
+
+run_hook () {
+	#hook name
+	hook_name="crypt-prompt"
+	#print crypt-prompt
+	cat /etc/crypt-prompt
+}
+

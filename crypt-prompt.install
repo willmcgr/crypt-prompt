@@ -1,0 +1,19 @@
+
+##  build hook
+build() {
+	#name
+	SCRIPT="crypt-prompt"
+	#add cat
+	add_binary "cat"
+	#add txt
+	add_file "crypt-prompt"
+	#add runscript
+	add_runscript
+}
+
+##  display hook description
+help() {
+	    cat <<HELPEOF
+    A simple initpcio hook, which can display a file like /etc/issue before full disk encryption password prompt for legal purposes.
+HELPEOF
+}
