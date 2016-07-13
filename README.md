@@ -1,5 +1,7 @@
 # crypt-prompt
 
+An initcpio hook to display a warning before the encrypt hook comes up.  
+
 Files
 ---
 
@@ -8,29 +10,26 @@ aurpkgbuild: standalone pkgbuild.
 crypt-prompt.txt: the text that will be printed during boot.  
 makefile: used for installing w/o making a package.  
 
-
 Installation
 ---
 
-clone the repo.
-
+clone the repo, then:
 ```
 sudo make install
 ```
-if in archlinux with makepkg (TBA)
+or if on archlinux, then:
 ```
 makepkg -sci
 ```
 
-
 Uninstallation
 ---
 
+if installed with make:
 ```
 sudo make uninstall
 ```
-
-if in archlinux and installed with makepkg
+if installed with makepkg:
 ```
 sudo pacman -R crypt-prompt
 ```
@@ -38,21 +37,19 @@ sudo pacman -R crypt-prompt
 Enable
 ---
 
-To enable (archlinux)  
-&nbsp;&nbsp;&nbsp;&nbsp;Add **crypt-prompt** to hooks in the **/etc/mkinitcpio.conf** before the **encrypt** hook, then rebuild the initramfs.
+Add the **crypt-prompt** to hooks in the **/etc/mkinitcpio.conf** before the **encrypt** hook.
 ```
 HOOKS="... crypt-prompt encrypt ..."
 ```
+then rebuild the initramfs image:
 ```
 sudo mkinitcpio -p linux
 ```
 
-
 Configuration
 ---
 
-Edits can be made to /etc/crypt-prompt after installation.
-
+Edits can be made to **/etc/crypt-prompt** to change the warning that gets displayed.
 
 LEGAL
 ---
