@@ -17,9 +17,9 @@ clone the repo.
 ```
 sudo make install
 ```
-if in archlinux (TBA)
+if in archlinux with makepkg (TBA)
 ```
-
+makepkg -sci
 ```
 
 
@@ -30,10 +30,23 @@ Uninstallation
 sudo make uninstall
 ```
 
-if in archlinux and installed with makpkg
+if in archlinux and installed with makepkg
 ```
 sudo pacman -R i3locker
 ```
+
+Enable
+---
+
+To enable (archlinux)  
+&nbsp;&nbsp;&nbsp;&nbsp;Add **crypt-prompt** to hooks in the **/etc/mkinitcpio.conf** before the **encrypt** hook, then rebuild the initramfs.
+```
+HOOKS="... crypt-prompt encrypt ..."
+```
+```
+sudo mkinitcpio -p linux
+```
+
 
 Configuration
 ---
@@ -44,6 +57,6 @@ Edits can be made to /etc/crypt-prompt after installation.
 LEGAL
 ---
 
-Provided as is. Use as you wish, attribute if you want I don't care. 
+Provided as is. Use as you wish, attribute if you want I don't care.  
 Also, I'm not responsable for anything you do with this. IE if you do something stupid you're just stupid.
 
