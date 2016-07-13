@@ -32,7 +32,7 @@ sudo make uninstall
 
 if in archlinux and installed with makepkg
 ```
-sudo pacman -R i3locker
+sudo pacman -R crypt-prompt
 ```
 
 Enable
